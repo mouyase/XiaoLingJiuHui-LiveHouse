@@ -1,0 +1,91 @@
+.House {
+    width: 100%;
+    height: 60%;
+    position: relative;
+    overflow: hidden;
+}
+
+.SheHuiRen {
+    position: absolute;
+    width: 512px;
+    animation-name: beat;
+    /*动画名称*/
+    animation-duration: .3s;
+    /*设置秒数*/
+    animation-timing-function: ease;
+    /*速度曲线*/
+    animation-iteration-count: infinite;
+    /*播放次数*/
+    animation-direction: alternate;
+    /*逆向播放*/
+    animation-play-state: running;
+}
+
+@keyframes beat {
+    0% {
+        transform: translateY(10%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.SheHuiRen:nth-child(1) {
+    left: calc(25% - 256px);
+    top: 25%;
+    animation-delay: .1s;
+}
+
+.SheHuiRen:nth-child(2) {
+    left: calc(50% - 256px);
+    top: 20%;
+    animation-delay: .2s;
+}
+
+.SheHuiRen:nth-child(3) {
+    right: calc(25% - 256px);
+    top: 25%;
+    animation-delay: .3s;
+}
+
+.SheHuiRen:nth-child(4) {
+    left: calc(15% - 256px);
+    top: 50%;
+    animation-delay: .4s;
+}
+
+.SheHuiRen:nth-child(5) {
+    left: calc(40% - 256px);
+    top: 45%;
+    animation-delay: .5s;
+}
+
+.SheHuiRen:nth-child(6) {
+    right: calc(40% - 256px);
+    top: 45%;
+    animation-delay: .6s;
+}
+
+.SheHuiRen:nth-child(7) {
+    right: calc(15% - 256px);
+    top: 50%;
+    animation-delay: .7s;
+}
+
+.SheHuiRen:nth-child(8) {
+    left: calc(25% - 256px);
+    top: 75%;
+    animation-delay: .8s;
+}
+
+.SheHuiRen:nth-child(9) {
+    left: calc(50% - 256px);
+    top: 70%;
+    animation-delay: .9s;
+}
+
+.SheHuiRen:nth-child(10) {
+    right: calc(25% - 256px);
+    top: 75%;
+}
