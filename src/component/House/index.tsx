@@ -68,7 +68,7 @@ const House = () => {
     const addSheHuiRen = () => {
         let array: any[] = []
         for (let i = 0; i < 10; i++) {
-            array.push(<img className={styles.SheHuiRen} src={shehuiren} key={i} />)
+            array.push(<img className={styles.SheHuiRen} src={shehuiren} key={i}  alt={""}/>)
         }
         return array
     };
