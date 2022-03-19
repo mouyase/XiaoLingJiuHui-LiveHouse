@@ -25,10 +25,10 @@ const House = () => {
         let ws = danmaku.connect(22754458, (type, data) => {
             switch (type) {
                 case DataType.CertifySuccess:
-                    console.log(data)
+                    // console.log(data)
                     break;
                 case DataType.Danmaku:
-                    console.log(data)
+                    // console.log(data)
                     danmakuPoolRef.current.push({
                         name: data.username,
                         text: data.text,
